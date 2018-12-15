@@ -30,8 +30,11 @@ urlpatterns = [
     # paths del Pages
     path('page/',include('pages.urls')),
 
-    #paths del admin
+    # paths del admin
     path('admin/', admin.site.urls),
+
+    # paths de Contact
+    path('contact/', include('contact.urls')),
 ]
 
 if settings.DEBUG:

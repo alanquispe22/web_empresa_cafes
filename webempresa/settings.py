@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'sa=qfo30y+--+9950e6uuarqtqr03u7&7__znje(0976az7j76'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['alanphantom.pythonanywhere.com','localhost','127.0.0.1']
 
 
 # Application definition
@@ -126,12 +126,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 # Media Files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 
-# Ckeditor 
+# Ckeditor
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'Custom',
